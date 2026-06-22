@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 IS THE NEW 2016: THE CULTURE RESET</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #989898; 
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+            line-height: 1.3;
+        }
+        
+        h1, h2, h3, h4, .logo, nav a, .trend-title-big {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        p, span, li {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 50px;
+        }
+
+        header {
+            padding: 20px 0 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 38px;
+            color: #ff9beb;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            gap: 35px;
+        }
+        nav a {
+            color: #ff9beb;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .top-white-bar {
+            width: 100%;
+            height: 1px;
+            background-color: #ffffff;
+            margin-bottom: 40px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .hero-title {
+            font-size: 46px;
+            letter-spacing: -0.5px;
+            margin-bottom: 25px;
+            word-spacing: -2px;
+        }
+        .hero-title span {
+            color: #ff9beb;
+            font-weight: 700;
+        }
+        .main-art-box {
+            width: 100%;
+            overflow: hidden;
+        }
+        .main-art-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .phenomena-section {
+            display: grid;
+            grid-template-columns: 4.5fr 5.5fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        .graph-box {
+            width: 100%;
+            overflow: hidden;
+        }
+        .graph-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .phenomena-content h2 {
+            color: #ff9beb; 
+            font-size: 26px;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+        .phenomena-list {
+            list-style: none;
+        }
+        .phenomena-list li {
+            margin-bottom: 14px;
+        }
+        .phenomena-list h3 {
+            font-size: 15px;
+            color: #ffffff;
+            margin-bottom: 2px;
+        }
+        .phenomena-list p {
+            font-size: 11px;
+            color: #cccccc;
+        }
+
+        .trend-container-layout {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 25px;
+            margin-bottom: 70px;
+            padding-top: 20px;
+        }
+        .trend-content-core {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        .trend-title-big {
+            font-size: 85px;
+            line-height: 0.9;
+            letter-spacing: -2px;
+            min-width: 240px;
+            padding-top: 10px;
+        }
+        .trend-right-media-block {
+            flex-grow: 1;
+        }
+        
+        .trend-media-grid {
+            display: flex; 
+            gap: 15px;
+            margin-bottom: 20px;
+            align-items: center; 
+        }
+        
+        .media-box-large {
+            flex: 2; 
+            height: 100%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            overflow: hidden;
+        }
+        
+        .media-box-small {
+            flex: 1; 
+            height: 100%; 
+            overflow: hidden;
+        }
+        
+        .media-box-large img {
+            max-width: 100%; 
+            max-height: 100%; 
+            height: auto; 
+            display: block;
+        }
+        
+        .media-box-small img {
+            width: 100%; 
+            height: auto; 
+            display: block;
+        }
+        
+        .trend-desc {
+            font-size: 12px;
+            color: #ffffff;
+            text-align: justify;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+        .pink-vertical-bar {
+            width: 14px;
+            background: linear-gradient(to bottom, #e066b7, #b23b8c);
+            border-radius: 7px;
+            box-shadow: 0 0 8px rgba(224, 102, 183, 0.4);
+        }
+
+        .section-wrapper {
+            margin-bottom: 70px;
+            padding-top: 20px;
+        }
+        .section-title {
+            color: #ff9beb;
+            font-size: 26px;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+        }
+        
+        .archive-block-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch; 
+            gap: 15px;
+            width: 100%;
+            height: 320px; 
+            margin-bottom: 45px;
+        }
+        
+        .archive-card {
+            display: block;
+            flex: 1 1 auto; 
+            overflow: hidden;
+        }
+        
+        .archive-card img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain; 
+        }
+
+        .archive-descriptions {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .desc-group {
+            width: 100%;
+        }
+        .desc-group h4 {
+            color: #ff9beb;
+            font-size: 14px;
+            margin-bottom: 6px;
+            text-transform: none;
+        }
+        .desc-group p {
+            color: #ffffff;
+            font-size: 12px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .vibes-block-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 20px;
+            width: 100%;
+            height: 320px; 
+            margin-bottom: 45px;
+        }
+        
+        .vibes-card {
+            display: block;
+            flex: 1 1 auto;
+            overflow: hidden;
+        }
+        
+        .vibes-card img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+        }
+
+        .bottom-white-bar {
+            width: 100%;
+            height: 1px;
+            background-color: #ffffff;
+            margin-top: 40px;
+        }
+        footer {
+            padding: 20px 0 40px 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .footer-copy {
+            font-size: 12px;
+            color: #ff9beb;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="#" class="logo">+</a>
+            <nav>
+                <a href="#why-section">why</a>
+                <a href="#archive-section">archive</a>
+                <a href="#vibes-section">vibes</a>
+            </nav>
+        </header>
+        
+        <div class="top-white-bar"></div>
+
+        <section class="hero-section">
+            <h1 class="hero-title"><span>2026</span> is the new <span>2016</span>:<br>the culture reset</h1>
+            <div class="main-art-box">
+                <img src="images/main.png" alt="Main Visual Image">
+            </div>
+        </section>
+
+        <section class="phenomena-section">
+            <div class="graph-box">
+                <img src="images/graphe.png" alt="Graph / Chart Image">
+            </div>
+            <div class="phenomena-content">
+                <h2>Key 2016 Phenomena</h2>
+                <ul class="phenomena-list">
+                    <li>
+                        <h3>1. Return of Indie - Sleaze</h3>
+                        <p>The return of indie-sleaze and music dampener.</p>
+                    </li>
+                    <li>
+                        <h3>2. Peak Vine Humour Revival</h3>
+                        <p>Peak Vine Humour Revival</p>
+                    </li>
+                    <li>
+                        <h3>3. The Hedi Slimane 'Rock Chic' Era</h3>
+                        <p>The defining razor-sharp silhouettes, leather jackets, and rock glamour.</p>
+                    </li>
+                    <li>
+                        <h3>4. Frank Ocean's 'Blonde' Impact</h3>
+                        <p>Celebrating the pioneer cultural and sonic masterpiece of 2016.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="trend-container-layout" id="why-section">
+            <div class="trend-content-core">
+                <div class="trend-title-big">
+                    2026<br>IS THE<br>NEW<br>2016?
+                </div>
+                <div class="trend-right-media-block">
+                    <div class="trend-media-grid">
+                        <div class="media-box-large">
+                            <img src="images/tiktok-feed.png" alt="UI / App Stream Grid Image">
+                        </div>
+                        <div class="media-box-small">
+                            <img src="images/collage.webp" alt="Collage Image">
+                        </div>
+                    </div>
+                    <p class="trend-desc">
+                        Looking back from 2026, 2016 is remembered as a golden era for music and subcultures, thriving with the raw energy of underground scenes and peak indie culture. It was a time of perfect tech-life balance, highlighted by Pokémon GO bringing people together before short-form algorithms began dominating our attention spans. Living in a pre-pandemic world, we could gather freely at crowded festivals and venues without any social anxiety or disconnection. The era also marked a brilliant cultural sweet spot where high-fashion archive revivals and human creativity outshone today's AI-driven landscape. Ultimately, we look to 2016 because it was the last era of genuine exploration, driven by our own passions rather than algorithmic curation.
+                    </p>
+                </div>
+            </div>
+            <div class="pink-vertical-bar"></div>
+        </section>
+
+        <section class="section-wrapper" id="archive-section">
+            <h2 class="section-title">Archive Sessions</h2>
+            
+            <div class="archive-block-grid">
+                <div class="archive-card">
+                    <img src="images/archive-01.jpg" alt="Hedi's Razor-Sharp Silhouette">
+                </div>
+                <div class="archive-card">
+                    <img src="images/archive-02.jpg" alt="The Golden Era of Rock Chic">
+                </div>
+                <div class="archive-card">
+                    <img src="images/archive-03.jpg" alt="Indie Sleaze Raw and Unfiltered">
+                </div>
+                <div class="archive-card">
+                    <img src="images/archive-04.jpg" alt="Archival Napoleon Jacket">
+                </div>
+            </div>
+
+            <div class="archive-descriptions">
+                <div class="desc-group">
+                    <h4>Hedi's Razor-Sharp Silhlouette :</h4>
+                    <p>Fatigue with the standardized, algorithm-driven oversized trends of 2026 has prompted the underground scene to summon back Slimane's signature sharp, rock-chic archive silhouettes. It is a declaration to reclaim the raw lines of the human body and restore true originality.</p>
+                </div>
+                <div class="desc-group">
+                    <h4>The Golden Era of Rock Chic :</h4>
+                    <p>Navigating the hyper-connected tech-life balance of 2026, digitally fatigued youth find solace in the dark glamour of 2016. To articulate the cold, neon-lit nights hidden behind our daily screens, there is no visual medium more perfect than rock chic.</p>
+                </div>
+                <div class="desc-group">
+                    <h4>Indie-Sleaze, Raw and Unfiltered :</h4>
+                    <p>In a 2026 landscape saturated with AI-curated perfection and pristine digital pixels, people paradoxically crave the freedom to be messy. The lo-fi, spontaneous energy of 2016 Indie-Sleaze serves as both the aesthetic and spiritual spine of today's hyperpop scene, shattering the suffocating perfectionism of modern social media.</p>
+                </div>
+                <div class="desc-group">
+                    <h4>Archival Napoleon Jacket :</h4>
+                    <p>The show-stopping statement pieces that once dominated the 2016 scene have shifted in 2026 to become the holy grail objects of archival curation. The act of deconstructing a decade-old masterpiece and styling it within today's subcultural context has become the ultimate flex of a futuristic fashion sensibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-wrapper" id="vibes-section">
+            <h2 class="section-title">2016 Vibes</h2>
+            
+            <div class="vibes-block-grid">
+                <div class="vibes-card">
+                    <img src="images/vibes-01.png" alt="Snapchat Filter Aesthetics">
+                </div>
+                <div class="vibes-card">
+                    <img src="images/vibes-02.png" alt="Low-Res Flash & Timestamps">
+                </div>
+                <div class="vibes-card">
+                    <img src="images/vibes-03.png" alt="Tumblr Sad Boys Interface">
+                </div>
+            </div>
+
+            <div class="archive-descriptions">
+                <div class="desc-group">
+                    <h4>Snapchat Filter & Overlay Aesthetics :</h4>
+                    <p>Recreate the iconic 2016 Snapchat vibe by using photos with the signature dog filter, using the classic translucent black text banner with a web-native hover animation to display raw captions like mood or miss me.</p>
+                </div>
+                <div class="desc-group">
+                    <h4>Low-Res Flash & Timestamped Screencaps :</h4>
+                    <p>Incorporate gritty, overexposed iPhone mirror selfies taken with a harsh flash in dark rooms, processed with heavy digital noise and a sharp orange 2016.06.08 timestamp embedded directly into the corner of the grid card.</p>
+                </div>
+                <div class="desc-group">
+                    <h4>Tumblr 'Sad Boys' & iOS Interface Scraps :</h4>
+                    <p>Drop pixelated, glitched screenshots of 2016-era iOS music players, Snapchat receipts (Opened 2m ago), and neon-pink digital scribbles straight into your strict, high-end technical grid to make it feel like an encrypted 2016 private vault.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="bottom-white-bar"></div>
+
+        <footer>
+            <div class="footer-copy">The culture reset</div>
+        </footer>
+    </div>
+
+</body>
+</html>
